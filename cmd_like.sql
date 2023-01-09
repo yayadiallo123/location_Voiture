@@ -1,5 +1,4 @@
-select first_name, last_name 
-From customer
-where first_name like 't%A'
-
-; 
+select customer_id,rental_id,return_date from rental
+where customer_id IN (1,2,3,4)
+order by return_date desc
+;
